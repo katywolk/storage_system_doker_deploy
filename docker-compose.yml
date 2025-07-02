@@ -3,7 +3,7 @@ version: "3.8"
 services:
   frontend:
     build:
-      context: ../Storage_system_front
+      context: https://github.com/katywolk/storage_system_front.git
       args:
         BASE_URL: http://${HOST_IP}
         API_URL: ${HOST_IP}
@@ -15,7 +15,7 @@ services:
       - backend
   backend:
     build:
-      context: ../Storage_system_back
+      context: https://github.com/katywolk/storage_system_back.git
     ports:
       - "${BACKEND_PORT}:3001"
     environment:
