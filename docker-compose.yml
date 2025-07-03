@@ -28,7 +28,7 @@ services:
       - mongo
 
   mongo:
-    image: mongo:4.4
+    image: mongo
     container_name: mongo
     ports:
       - "${MONGODB_PORT}:${MONGODB_PORT}"
